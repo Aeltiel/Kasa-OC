@@ -1,5 +1,3 @@
-
-
 Décrouvrez le rendu du site ici [Kasa](https://aeltiel.github.io/Kasa-OC/)
 
 ## Available Scripts
