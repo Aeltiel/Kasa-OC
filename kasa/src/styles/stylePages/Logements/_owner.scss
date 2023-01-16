@@ -1,0 +1,49 @@
+.LocaVue__owner{
+    width: 125px;
+    height: 34px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    position: absolute;
+    left: 62%;
+    top: 70%;
+    &--name{
+        color: $primarycolor;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    &--img{
+        border-radius: 50%;
+    }
+    @include tablette{
+        left: 83%;
+        top: 0;
+    }
+    @include desktopPortable{
+        width: 157px;
+        height: 64px;
+        left: 85%;
+        top: 0;
+        &--name{
+            font-size: 18px; 
+        }
+    }
+    @include desktop{
+        width: 157px;
+        height: 64px;
+        left: 87%;
+        top: 0;
+        &--name{
+            font-size: 18px; 
+        }
+    }
+    @include desktopL{
+        width: 157px;
+        height: 64px;
+        left: 89%;
+        top: 0;
+        &--name{
+            font-size: 18px; 
+        }
+    }
+}

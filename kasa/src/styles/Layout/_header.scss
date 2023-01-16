@@ -1,0 +1,97 @@
+header{
+    width: 100%;
+    height : 47px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5px;
+    @include tablette{
+        height: 68px;
+        justify-content: space-around;
+    }
+    @include desktopPortable{
+        height: 68px;
+        width: 90%;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    @include desktop{
+        height: 68px;
+        width: 90%;
+        padding-left: 100px;
+        padding-top: 40px;
+    }
+    @include desktopL{
+        height: 68px;
+        width: 90%;
+        padding-left: 100px;
+        padding-top: 40px;
+    }
+}
+
+img{
+    width: 145px;
+    height: 47px;
+    @include tablette{
+        width: 210px;
+        height: 68px;
+    }
+    @include desktopPortable{
+        width: 210px;
+        height: 68px;
+    }
+    @include desktop{
+        width: 210px;
+        height: 68px;
+    }
+    @include desktopL{
+        width: 210px;
+        height: 68px;
+    }
+}
+nav{
+    width: 140px;
+    height: 17px;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    @include tablette{
+        width: 250px;
+        height: 34px;
+    }
+    @include desktopPortable{
+        width: 309px;
+        justify-content: flex-end;
+    }
+    @include desktop{
+        width: 309px;
+    }
+    @include desktopL{
+        width: 309px;
+    }
+}
+
+li{
+    font-size: 12px;
+    list-style-type: none;
+    & a{
+        color : $primarycolor;
+    text-decoration: none; 
+    }
+    & a:hover{
+        border-bottom: 2px $primarycolor solid;
+    }
+    @include tablette{
+        font-size: 20px;
+    }
+    @include desktopPortable{
+        font-size: 22px;
+        padding-left: 45px;
+    }
+    @include desktop{
+        font-size: 24px;
+    }
+    @include desktopL {
+        font-size: 24px;
+    }
+}

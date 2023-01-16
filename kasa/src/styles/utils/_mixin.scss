@@ -1,0 +1,27 @@
+@mixin tablette {
+    @media screen and (min-width : map-get($breakpoints, mobileL)) and (max-width : map-get($breakpoints, tablette)){
+        @content
+    }
+};
+
+@mixin desktopPortable{
+    @media screen and (min-width : 769px) and (max-width : map-get($breakpoints, desktopPortable)){
+        @content
+    }
+};
+
+@mixin desktop{
+    @media screen and (min-width : 1025px) and (max-width : map-get($breakpoints, desktop)){
+        @content
+    }
+};
+
+@mixin desktopL{
+    @media screen and (min-width : 1441px) and (max-width : 1920px){
+        @content
+    }
+};
+
+@mixin Degrade {
+    background: linear-gradient($primarycolor, black)
+}

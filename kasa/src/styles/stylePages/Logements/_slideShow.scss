@@ -1,0 +1,100 @@
+.carrousel {
+    width: 98%;
+    height: 255px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 27px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    &__image img {
+        width: 98%;
+        height: 255px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__Left {
+        position: absolute;
+        top : 45%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    &__Right{
+        position: absolute;
+        top : 45%;
+        left : 91%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer; 
+    }
+    @include tablette{
+        margin-left: 10px;
+        &__Left{
+            top: 47%;
+            left: 2%;
+            font-size: 24px;
+        }
+        &__Right{
+            font-size: 24px;
+        }
+    }
+    @include desktopPortable{
+        margin-left: 10px;
+        &__Left{
+            top: 45%;
+            left: 2%;
+            font-size: 40px;
+        }
+        &__Right{
+            font-size: 40px;
+            top: 42.5%;
+        }
+    }
+    @include desktop{
+        width: 94%;
+        padding-left: 100px;
+        height: 415px;
+        border-radius: 25px;
+        &__image img {
+            width: 94%;
+            height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+        &__Left{
+            top: 40%;
+            left: 9%;
+            font-size: 79px;
+        }
+        &__Right{
+            top: 39%;
+            left: 87%;
+            font-size: 79px; 
+        }
+    }
+    @include desktopL{
+        width: 94.5%;
+        padding-left: 100px;
+        height: 415px;
+        border-radius: 25px;
+        &__image img {
+            width: 94.5%;
+            height: 415px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+        &__Left{
+            top: 40%;
+            left: 7%;
+            font-size: 79px;
+        }
+        &__Right{
+            top: 38.5%;
+            left: 89.5%;
+            font-size: 79px; 
+        }
+    }
+}

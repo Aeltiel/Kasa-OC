@@ -1,0 +1,12 @@
+.rateBox {
+    display: flex;
+    gap: 2px;
+
+    &__color {
+        color: $primarycolor;
+    }
+
+    &__grey {
+        color: $secondarycolor;
+    }
+}

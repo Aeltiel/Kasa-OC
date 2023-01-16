@@ -1,0 +1,112 @@
+.Error{
+    width: 260px;
+    padding-left: 57px;
+    padding-top: 50%;
+    padding-bottom: 120px;
+    text-align: center;
+    color: $primarycolor;
+    &__Oups{
+        font-size: 96px;
+        font-weight: bold;
+        margin: 0;
+        &--1{
+            font-size: 18px;
+            margin: 0;
+        }
+        &--2{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @include tablette{
+        width : 100%;
+        padding: 0;
+        padding-top: 30%;
+        padding-bottom: 120px;
+        &__Oups{
+            &--1{
+                font-size: 22px;
+            }
+            &--2{
+                display: inline;
+            }
+        }
+    }
+    @include desktopPortable{
+        width : 100%;
+        padding: 0;
+        padding-top: 20%;
+        padding-bottom: 182px;
+        &__Oups{
+            &--1{
+                font-size: 36px;
+            }
+            &--2{
+                display: inline;
+            }
+        }
+    }
+    @include desktop {
+        width : 100%;
+        padding: 0;
+        padding-top: 174px;
+        padding-bottom: 182px;
+        &__Oups{
+            font-size: 200px;
+            &--1{
+                font-size: 36px;
+            }
+            &--2{
+                display: inline;
+            }
+        }
+    }
+    @include desktopL{
+        width : 90%;
+        padding-top: 10%;
+        padding-bottom: 182px;
+        &__Oups{
+            &--1{
+                font-size: 36px;
+            }
+            &--2{
+                display: inline;
+            }
+        }
+    }
+
+}
+
+.ErrorLink{
+    padding-left: 75px;
+    color: $primarycolor;
+    font-size: 14px;
+    @include tablette{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    @include desktopPortable{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 18px;
+    }
+    @include desktop {
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 18px;
+    }
+    @include desktopL{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 55px;
+        font-size: 18px;
+    }
+}   

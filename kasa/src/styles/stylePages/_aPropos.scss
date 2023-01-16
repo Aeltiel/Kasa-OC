@@ -1,0 +1,73 @@
+.imgMobile {
+    width: 95%;
+    height: 223px;
+    border-radius: 25px;
+    filter: brightness(70%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @include tablette {
+        display: none;
+    }
+
+    @include desktopPortable {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+    @include desktopL {
+        display: none;
+    }
+}
+
+.imgDesktop {
+    display: none;
+
+    @include tablette {
+        display: block;
+        width: 95%;
+        height: 223px;
+        border-radius: 25px;
+        filter: brightness(70%);
+        margin-top: 44px;
+        margin-bottom: 33px;
+        margin-left: 2%;
+    }
+
+    @include desktopPortable {
+        display: block;
+        width: 95%;
+        height: 223px;
+        border-radius: 25px;
+        filter: brightness(70%);
+        margin-top: 44px;
+        margin-bottom: 33px;
+        margin-left: 2%;
+    }
+
+    @include desktop {
+        display: block;
+        width: 95%;
+        height: 223px;
+        border-radius: 25px;
+        filter: brightness(70%);
+        margin-top: 44px;
+        margin-bottom: 33px;
+        margin-left: 3%;
+    }
+
+    @include desktopL {
+        display: block;
+        display: block;
+        width: 95%;
+        height: 223px;
+        border-radius: 25px;
+        filter: brightness(70%);
+        margin-top: 44px;
+        margin-bottom: 33px;
+        margin-left: 3%;
+    }
+}

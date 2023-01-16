@@ -1,0 +1,157 @@
+a{
+    text-decoration: none;
+}
+.Card {
+    width: 95%;
+    height: 255px;
+    border-radius: 10px;
+    gap: 20px;
+    @include Degrade;
+    text-decoration: none;
+    &__img {
+        width: 91.5%;
+        height: 255px;
+        border-radius: 10px;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    &__Title {
+        width: 295px;
+        height: 52px;
+        position: relative;
+        left: 5.88%;
+        right: 5.88%;
+        top: 73.73%;
+        bottom: 5.88%;
+        color: white;
+    }
+
+    @include tablette {
+        width: 88%;
+        height: 255px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        @include Degrade;
+        &__img{
+            width: 88%;
+            height: 255px;
+            border-radius: 10px;
+            position: absolute; 
+        }
+        &__Title{
+            width: 295px;
+            height: 52px;
+            position: relative;
+            left: 5.88%;
+            right: 5.88%;
+            top: 73.73%;
+            bottom: 5.88%;
+            color: white; 
+        }
+
+    }
+
+    @include desktopPortable {
+        width: 310px;
+        height: 310px;
+        border-radius: 10px;
+        margin-bottom: 60px;
+        margin-top: 26px;
+        @include Degrade;
+        &__img{
+            width: 340px;
+            height: 340px;
+            border-radius: 10px;
+            position: absolute;
+            &:hover{
+                border: 3px solid $primarycolor;
+            } 
+        }
+        &__Title{
+            width: 300px;
+            height: 52px;
+            position: relative;
+            left: 5.88%;
+            right: 5.88%;
+            top: 73.73%;
+            bottom: 5.88%;
+            color: white; 
+        }
+        &:hover{
+            transform: scale(1.10);
+        }
+        &:hover &__Title{
+            color: darken($primarycolor, 20%);
+        }
+    }
+
+    @include desktop {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        @include Degrade;
+        &__img{
+            width: 340px;
+            height: 340px;
+            border-radius: 10px;
+            position: absolute; 
+            &:hover{
+                border: 3px solid $primarycolor;
+            } 
+        }
+        &__Title{
+            width: 300px;
+            height: 52px;
+            position: relative;
+            left: 5.88%;
+            right: 5.88%;
+            top: 73.73%;
+            bottom: 5.88%;
+            color: white; 
+        }
+        &:hover{
+            transform: scale(1.10);
+        }
+        &:hover &__Title{
+            color: darken($primarycolor, 20%);
+        }
+
+    }
+
+    @include desktopL {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        @include Degrade;
+        transition : scale(1);
+        &__img{
+            width: 340px;
+            height: 340px;
+            border-radius: 10px;
+            position: absolute;
+           &:hover{
+                border: 3px solid $primarycolor;
+            }  
+        }
+        &__Title{
+            width: 300px;
+            height: 52px;
+            position: relative;
+            left: 5.88%;
+            right: 5.88%;
+            top: 73.73%;
+            bottom: 5.88%;
+            color: white;
+        }
+        &:hover{
+            transform: scale(1.10);
+        }
+        &:hover &__Title{
+            color: darken($primarycolor, 20%);
+        }
+        
+    }
+}

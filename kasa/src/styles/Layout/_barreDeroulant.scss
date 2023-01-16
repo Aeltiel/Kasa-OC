@@ -1,0 +1,157 @@
+.rollingBar {
+    width: 95%;
+    padding-top: 20px;
+    margin: 0;
+    &__title {
+        background-color: $primarycolor;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 12px;
+        position: relative;
+        border-radius: 5px;
+
+        &--text {
+            color: white;
+            font-size: 13px;
+        }
+
+        &--btn1 {
+            display: none;
+        }
+
+        &--activeBtn1 {
+            position: absolute;
+            left: 91%;
+            top: 25%;
+            cursor: pointer;
+            background-color: $primarycolor;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        &--btn2 {
+            cursor: pointer;
+            background-color: $primarycolor;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+
+    &__descrptionActive {
+        height: 144px;
+        background-color: $secondarycolor;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        padding: 11px;
+        color: $primarycolor;
+        font-size: 12px;
+        padding-bottom: 50px;
+        & ul {
+           padding: 0;
+           margin: 0; 
+        }
+    }
+    @include tablette{
+        width: 95%;
+        &__title{
+            padding-left: 15px;
+            &--text{
+                font-size: 16px;
+            }
+            &--activeBtn1{
+                width: 55px;
+                font-size: 26px;
+                margin-left: -28px;
+                left: 92%;
+                top: 25%;
+            }
+            &--btn2{
+                padding-right: 28px;
+                font-size: 28px;
+            }
+        }
+        &__descrptionActive{
+            font-size: 20px;
+            padding-left: 18px;
+            padding-top: 27px;
+        }
+    }
+    @include desktopPortable{
+        width: 90%;
+        &__title{
+            padding-left: 18px;
+            &--text{
+                font-size: 20px;
+            }
+            &--activeBtn1{
+                width: 55px;
+                margin-left: -30px;
+                font-size: 28px;
+                left: 94%;
+                top: 28%;
+            }
+            &--btn2{
+                padding-right: 28px;
+                font-size: 28px;
+            }
+        }
+        &__descrptionActive{
+            font-size: 20px;
+            padding-left: 18px;
+            padding-top: 27px;
+        }
+    }
+    @include desktop{
+        width: 90%;
+        &__title{
+            padding-left: 18px;
+            &--text{
+                font-size: 24px;
+            }
+            &--activeBtn1{
+                width: 55px;
+                margin-left: -33px;
+                font-size: 32px;
+                left: 94.9%;
+                top: 28%;
+            }
+            &--btn2{
+                padding-right: 37px;
+                font-size: 28px;
+            }
+        }
+        &__descrptionActive{
+            font-size: 24px;
+            padding-left: 18px;
+            padding-top: 27px;
+        }
+    }
+    @include desktopL{
+        width: 90%;
+        &__title{
+            padding-left: 18px;
+            &--text{
+                font-size: 24px;
+            }
+            &--activeBtn1{
+                width: 55px;
+                margin-left: -35px;
+                font-size: 32px;
+                left: 96%;
+                top: 28%;
+            }
+            &--btn2{
+                padding-right: 37px;
+                font-size: 28px;
+            }
+        }
+        &__descrptionActive{
+            font-size: 24px;
+            padding-left: 18px;
+            padding-top: 27px;
+        }
+    }
+}

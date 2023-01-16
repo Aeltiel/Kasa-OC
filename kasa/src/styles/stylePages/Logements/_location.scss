@@ -1,0 +1,47 @@
+.LocaVue{
+    width: 95%;
+    color: $primarycolor;
+    padding-left: 5px;
+    &__title{
+        font-size: 18px;
+    }
+    &__city{
+        font-size: 14px;
+    }
+    @include tablette{
+        padding-left: 15px;
+        &__title{
+            font-size: 22px;
+        }
+        &__city{
+            font-size: 18px;
+        }
+    }
+    @include desktopPortable{
+        padding-left: 2%;
+        &__title{
+            font-size: 24px;
+        }
+        &__city{
+            font-size: 18px;
+        }
+    }
+    @include desktop{
+        padding-left: 7%;
+        &__title{
+            font-size: 36px;
+        }
+        &__city{
+            font-size: 18px;
+        }
+    }
+    @include desktopL{
+        padding-left: 7%;
+        &__title{
+            font-size: 36px;
+        }
+        &__city{
+            font-size: 18px;
+        }
+    }
+}

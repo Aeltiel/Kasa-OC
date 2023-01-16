@@ -1,0 +1,50 @@
+footer {
+    height: 209px;
+    width: 98%;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    &__img {
+        width: 122px;
+        height: 39px;
+        padding-top: 62px;
+        padding-left: 127px;
+        @include tablette{
+            padding-left: 42%;
+        }
+        @include desktopPortable{
+            padding-left: 20%;
+        }
+        @include desktop{
+            padding-left: 45%;
+        }
+        @include desktopL{
+            padding-left: 46.5%;
+        }
+    }
+
+    &__text {
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        @include tablette{
+            font-size: 15px;
+        }
+        @include desktopPortable{
+            font-size: 20px;
+        }
+        @include desktop{
+            font-size: 24px;
+        }
+        @include desktopL{
+          font-size: 24px;  
+        }
+    }
+}
+
+.fa-regular {
+    padding-right: 5px;
+}

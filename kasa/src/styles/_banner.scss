@@ -1,0 +1,163 @@
+.bannerMobile {
+    width: 100%;
+    height: 111px;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    &__img {
+        width: 97%;
+        height: 111px;
+        border-radius: 10px;
+        filter: brightness(70%);
+        position: relative;
+    }
+
+    &__TitleBox {
+        width: 217px;
+        position: absolute;
+        left: 9.6%;
+        right: 32.53%;
+        top: 14.04%;
+        bottom: 80.05%;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-align: left;
+        margin: 0;
+        color: white;
+    }
+
+    @include tablette {
+        display: none;
+    }
+
+    @include desktopPortable {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
+    @include desktopL {
+        display: none;
+    }
+}
+
+.banner {
+    display: none;
+
+    @include tablette {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 22px;
+        position: relative;
+
+        &__img {
+            width: 95%;
+            height: 223px;
+            border-radius: 15px;
+            filter: brightness(70%);
+        }
+
+        & h1 {
+            position: absolute;
+            left: 20.6%;
+            right: 16.53%;
+            top: 37.04%;
+            bottom: 80.05%;
+            color: white;
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+
+    @include desktopPortable {
+        display: block;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 43px;
+        width: 100%;
+        height: 223px;
+        position: relative;
+
+        &__img {
+            width: 95%;
+            height: 223px;
+            border-radius: 15px;
+            filter: brightness(70%);
+        }
+
+        & h1 {
+            display: inline;
+            position: absolute;
+            left: 19.9%;
+            right: 17.14%;
+            top: 35.32%;
+            bottom: 69.04%;
+            font-size: 40px;
+            color: white;
+            font-weight: normal;
+        }
+    }
+
+    @include desktop {
+        display: block;
+        width: 94%;
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-bottom: 43px;
+        height: 223px;
+        position: relative;
+
+        &__img {
+            width: 95%;
+            height: 223px;
+            border-radius: 15px;
+            filter: brightness(70%);
+        }
+
+        & h1 {
+            position: absolute;
+            left: 22.9%;
+            right: 20.14%;
+            top: 30.32%;
+            bottom: 69.04%;
+            bottom: 69.04%;
+            color: white;
+            font-weight: normal;
+            font-size: 48px;
+        }
+    }
+
+    @include desktopL {
+        display: block;
+        width: 94%;
+        height: 223px;
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-bottom: 43px;
+        position: relative;
+
+        &__img {
+            width: 95%;
+            height: 223px;
+            border-radius: 15px;
+            filter: brightness(70%);
+        }
+
+        & h1 {
+            position: absolute;
+            left: 33.9%;
+            right: 25.14%;
+            top: 37.32%;
+            bottom: 69.04%;
+            color: white;
+            font-weight: normal;
+        }
+    }
+}

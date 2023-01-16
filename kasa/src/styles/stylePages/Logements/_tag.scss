@@ -1,0 +1,38 @@
+.tag {
+    width: 84px;
+    height: 18px;
+    background-color: $primarycolor;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    padding-top: 3px;
+    text-align: center;
+
+    @include tablette {
+        font-size: 12px;
+    }
+
+    @include desktopPortable {
+        width: 115px;
+        height: 25px;
+        padding-top: 5px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    @include desktop {
+        width: 115px;
+        height: 25px;
+        padding-top: 5px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    @include desktopL {
+        width: 115px;
+        height: 25px;
+        padding-top: 5px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
