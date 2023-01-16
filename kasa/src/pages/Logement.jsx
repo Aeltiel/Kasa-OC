@@ -54,7 +54,7 @@ function Logement() {
                         <div className='locaContainer__items' >
                             <div className='locaContainer__items--tag'>
                                 {logement.tags.map((tag) => (
-                                    <Tag tag={tag} />
+                                    <Tag key={tag} tag={tag} />
                                 ))}
                             </div>
                             <div className='locaContainer__items--rate'>

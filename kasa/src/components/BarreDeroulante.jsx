@@ -12,11 +12,11 @@ function BarreDeroulante({ quality, description }) {
             return (
                 <ul>
                     {description.map((item) => (
-                        <li>{item}</li>
+                        <li key={item}>{item}</li>
                     ))}
                 </ul>
             )
-        }else {
+        } else {
             return description
         }
     }
