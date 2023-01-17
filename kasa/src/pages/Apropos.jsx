@@ -1,4 +1,3 @@
-import Footer from "../components/Footer"
 import BarreDeroulante from "../components/BarreDeroulante"
 import Quality from "../quality.json"
 import Apropos from "../assets/imageApropos.png"
@@ -19,7 +18,6 @@ function APropos() {
                 />
             ))}
         </div>
-        <Footer />
     </>
     )    
 }

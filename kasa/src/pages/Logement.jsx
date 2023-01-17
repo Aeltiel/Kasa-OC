@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
 import data from './data.json'
 import Error from './Error';
-import Footer from '../components/Footer'
 import Locations from '../components/Logements/Locations';
 import Owner from '../components/Logements/Owner'
 import SlideShow from '../components/Logements/SlideShow';
@@ -76,7 +75,6 @@ function Logement() {
                             />
                         </div>
                     </div>
-                    <Footer />
                 </div>)
         }
     }

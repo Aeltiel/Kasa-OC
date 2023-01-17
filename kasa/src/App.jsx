@@ -3,6 +3,7 @@ import Logement from './pages/Logement'
 import Error from './pages/Error'
 import Apropos from './pages/Apropos'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import {Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/Logements/:id' element = {<Logement />}/>
         <Route path='*' element = {<Error />}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }

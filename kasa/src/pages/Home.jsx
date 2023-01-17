@@ -1,7 +1,6 @@
 import Banner from '../components/Banner'
 import BannerMobile from '../components/BannerMobile'
 import Card from '../components/Card'
-import Footer from '../components/Footer'
 import data from './data.json'
 import { Link } from "react-router-dom"
 
@@ -24,7 +23,6 @@ function Home() {
                 ))}
 
             </div>
-            <Footer />
         </>
     )
 }
