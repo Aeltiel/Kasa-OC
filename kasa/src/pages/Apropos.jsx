@@ -1,4 +1,4 @@
-import BarreDeroulante from "../components/BarreDeroulante"
+import Collapse from "../components/Collapse"
 import Quality from "../quality.json"
 import Apropos from "../assets/imageApropos.png"
 import AProposMobile from "../assets/imageAproposMobile.png"
@@ -11,7 +11,7 @@ function APropos() {
         <img className = "imgDesktop" src={Apropos} alt="paysage de montagne"/>
         <div className="qualityContainer">
             {Quality.map((element) => (
-                <BarreDeroulante
+                <Collapse
                     key={element.id}
                     quality={element.name}
                     description={element.description}

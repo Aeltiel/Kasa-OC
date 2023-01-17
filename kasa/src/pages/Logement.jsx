@@ -6,7 +6,7 @@ import Locations from '../components/Logements/Locations';
 import Owner from '../components/Logements/Owner'
 import SlideShow from '../components/Logements/SlideShow';
 import Tag from '../components/Logements/Tag';
-import BarreDeroulante from '../components/BarreDeroulante'
+import Collapse from '../components/Collapse'
 import Rating from '../components/Logements/Rating';
 
 function Logement() {
@@ -63,13 +63,13 @@ function Logement() {
                     </div>
                     <div className='locaContainerInfos' >
                         <div className='locaContainerInfos--1' >
-                            <BarreDeroulante
+                            <Collapse
                                 quality="Description"
                                 description={logement.description}
                             />
                         </div>
                         <div className='locaContainerInfos--2' >
-                            <BarreDeroulante
+                            <Collapse
                                 quality="Équipments"
                                 description={logement.equipments}
                             />

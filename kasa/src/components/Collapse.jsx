@@ -1,7 +1,7 @@
 import { useState } from "react"
 //fonction pour les barres défilantes qui s'active ou non en fonction du clique
 //usage de props pour avoir un composant modulable à souhait
-function BarreDeroulante({ quality, description }) {
+function Collapse({ quality, description }) {
     const [view, setview] = useState(false)
     const buttonview = () => {
         setview(!view) // déclenche l'affichage du texte si c'est à true
@@ -38,4 +38,4 @@ function BarreDeroulante({ quality, description }) {
     )
 
 }
-export default BarreDeroulante
+export default Collapse
