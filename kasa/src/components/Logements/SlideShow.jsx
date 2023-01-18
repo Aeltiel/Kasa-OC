@@ -29,12 +29,12 @@ function SlideShow({ picture }) {
     return (
         <>
             <div className="carrousel">
-                <button className="carrousel__Left" onClick={(e) => carrouselLeft()}><i className="fa-solid fa-chevron-left"></i></button>
+                {imgTab.length <= 1 ? <div></div> : <button className="carrousel__Left" onClick={(e) => carrouselLeft()}><i className="fa-solid fa-chevron-left"></i></button>}
                 <div className="carrousel__image">
                     <img src={imgTab[imgIndex]} alt="intérieur de la location" />
-                    <p className="carrousel__image--counter">{imgIndex + 1}/{imgTab.length}</p>
+                    {imgTab.length <= 1 ? <div></div> :<p className="carrousel__image--counter">{imgIndex + 1}/{imgTab.length}</p>}
                 </div>
-                <button className="carrousel__Right" onClick={(e) => carrouselRight()}><i className="fa-solid fa-chevron-right"></i></button>
+                {imgTab.length <= 1 ? <div></div> :<button className="carrousel__Right" onClick={(e) => carrouselRight()}><i className="fa-solid fa-chevron-right"></i></button>}
             </div>
         </>
     )
