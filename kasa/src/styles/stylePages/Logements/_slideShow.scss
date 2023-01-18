@@ -6,95 +6,151 @@
     margin-top: 27px;
     margin-bottom: 15px;
     padding-left: 5px;
-    &__image img {
-        width: 98%;
-        height: 255px;
-        border-radius: 10px;
-        object-fit: cover;
+
+    &__image {
+        & img {
+            width: 98%;
+            height: 255px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        &--counter {
+            display: none;
+        }
     }
 
     &__Left {
         position: absolute;
-        top : 45%;
+        top: 45%;
         background-color: transparent;
         border: none;
         color: white;
         cursor: pointer;
     }
-    &__Right{
+
+    &__Right {
         position: absolute;
-        top : 45%;
-        left : 91%;
+        top: 45%;
+        left: 91%;
         background-color: transparent;
         border: none;
         color: white;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    @include tablette{
+
+    @include tablette {
         margin-left: 10px;
-        &__Left{
+
+        &__Left {
             top: 47%;
             left: 2%;
             font-size: 24px;
         }
-        &__Right{
+
+        &__Right {
             font-size: 24px;
         }
     }
-    @include desktopPortable{
+
+    @include desktopPortable {
         margin-left: 10px;
-        &__Left{
+
+        &__image {
+            &--counter {
+                display: block;
+                color: white;
+                margin: 0;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+            }
+        }
+
+        &__Left {
             top: 45%;
             left: 2%;
             font-size: 40px;
         }
-        &__Right{
+
+        &__Right {
             font-size: 40px;
             top: 42.5%;
         }
     }
-    @include desktop{
+
+    @include desktop {
         width: 94%;
         padding-left: 100px;
         height: 415px;
         border-radius: 25px;
-        &__image img {
-            width: 94%;
-            height: 415px;
-            border-radius: 25px;
-            object-fit: cover;
+
+        &__image {
+            & img {
+                width: 94%;
+                height: 415px;
+                border-radius: 25px;
+                object-fit: cover;
+            }
+
+            &--counter {
+                display: block;
+                color: white;
+                margin: 0;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+            }
         }
-        &__Left{
+
+
+        &__Left {
             top: 40%;
             left: 9%;
             font-size: 79px;
         }
-        &__Right{
+
+        &__Right {
             top: 39%;
             left: 87%;
-            font-size: 79px; 
+            font-size: 79px;
         }
     }
-    @include desktopL{
+
+    @include desktopL {
         width: 94.5%;
         padding-left: 100px;
         height: 415px;
         border-radius: 25px;
-        &__image img {
-            width: 94.5%;
-            height: 415px;
-            border-radius: 25px;
-            object-fit: cover;
+
+        &__image {
+            img {
+                width: 94.5%;
+                height: 415px;
+                border-radius: 25px;
+                object-fit: cover;
+            }
+
+            &--counter {
+                display: block;
+                color: white;
+                margin: 0;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+            }
         }
-        &__Left{
+
+        &__Left {
             top: 40%;
             left: 7%;
             font-size: 79px;
         }
-        &__Right{
+
+        &__Right {
             top: 38.5%;
             left: 89.5%;
-            font-size: 79px; 
+            font-size: 79px;
         }
     }
 }

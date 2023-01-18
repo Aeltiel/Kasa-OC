@@ -6,14 +6,22 @@
     margin-bottom: 16px;
     position: absolute;
     left: 62%;
-    top: 70%;
+    top: 80%;
     &--name{
         color: $primarycolor;
         font-size: 12px;
-        padding-right: 10px;
+        padding-right: 8px;
+        padding-left: 23px;
+        margin: 0;
+        text-align: center;
     }
-    &--img{
-        border-radius: 50%;
+    &--img {
+        & img{
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     }
     @include tablette{
         left: 83%;
@@ -27,6 +35,12 @@
         &--name{
             font-size: 18px; 
         }
+        &--img{
+            & img{
+                width: 64px;
+                height: 64px; 
+            }
+        }
     }
     @include desktop{
         width: 157px;
@@ -36,6 +50,12 @@
         &--name{
             font-size: 18px; 
         }
+        &--img{
+            & img{
+                width: 64px;
+                height: 64px; 
+            }
+        }
     }
     @include desktopL{
         width: 157px;
@@ -44,6 +64,12 @@
         top: 0;
         &--name{
             font-size: 18px; 
+        }
+        &--img{
+            & img{
+                width: 64px;
+                height: 64px; 
+            }
         }
     }
 }
