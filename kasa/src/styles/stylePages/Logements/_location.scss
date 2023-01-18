@@ -27,7 +27,6 @@
         }
     }
     @include desktop{
-        padding-left: 7%;
         &__title{
             font-size: 36px;
         }
@@ -36,7 +35,6 @@
         }
     }
     @include desktopL{
-        padding-left: 7%;
         &__title{
             font-size: 36px;
         }

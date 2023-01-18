@@ -105,7 +105,7 @@
         }
     }
     @include desktop{
-        width: 90%;
+        width: 100%;
         &__title{
             padding-left: 18px;
             &--text{
@@ -130,7 +130,7 @@
         }
     }
     @include desktopL{
-        width: 90%;
+        width: 100%;
         &__title{
             padding-left: 18px;
             &--text{

@@ -50,24 +50,25 @@
 
     @include desktop {
         display: block;
-        width: 95%;
+        width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
         height: 223px;
         border-radius: 25px;
         filter: brightness(70%);
         margin-top: 44px;
         margin-bottom: 33px;
-        margin-left: 3%;
     }
 
     @include desktopL {
         display: block;
-        display: block;
-        width: 95%;
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
         height: 223px;
         border-radius: 25px;
         filter: brightness(70%);
         margin-top: 44px;
         margin-bottom: 33px;
-        margin-left: 3%;
     }
 }

@@ -23,17 +23,23 @@
         }
     }
     @include desktop{
+        width: 1240px;
+        margin-left: auto;
+        margin-right: auto;
         &__items{
+            width: 1240px;
             display: flex;
             justify-content: space-between;
-            padding-left: 7%;
         }
     }
     @include desktopL{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
         &__items{
+            width: 1440px;
             display: flex;
             justify-content: space-between;
-            padding-left: 7%;
         }
     }
 }
@@ -53,22 +59,24 @@
         justify-content: space-between;
     }
     @include desktopPortable{
-        width: 93%;
+        width: 99%;
         display: flex;
-        padding-left: 7%;
-        justify-content: space-between;
+        margin-left: 2%; 
     }
     @include desktop{
-        width: 93%;
+        width: 1240px;
         display: flex;
-        padding-left: 7%;
-        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+       gap: 76px;
+       
     }
     @include desktopL{
-        width: 93%;
-        padding-left: 7%;
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
-        justify-content: space-between;
+        gap: 76px;
     }
 
 }

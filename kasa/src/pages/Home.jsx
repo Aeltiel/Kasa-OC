@@ -14,14 +14,13 @@ function Home() {
             <Banner />
             <div className='Home-container'>
                 {data.map((house) => (
-                    <Link key={house.id} to={`/Logements/${house.id}`}>
-                        <Card
-                            cover={house.cover}
-                            title={house.title}
-                        />
-                    </Link>
+                    <Card
+                        key={house.id}
+                        id={house.id}
+                        cover={house.cover}
+                        title={house.title}
+                    />
                 ))}
-
             </div>
         </>
     )
