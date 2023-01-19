@@ -2,6 +2,7 @@ import { useState } from "react"
 
 //carroussel pour la page logement
 function SlideShow({ picture }) {
+    //usage de useState pour stocker les images et les manipuler pour les afficher dans le carrousel
     const [imgTab, setImg] = useState(picture)
     const [imgIndex, setImgIndex] = useState(0)
 
@@ -26,6 +27,8 @@ function SlideShow({ picture }) {
         }
     }
 
+    //usage d'un ternaire pour afficher ou non le compteur et les chevrons en fonction du nombre d'image
+    //s'il n'y a qu'une seule image : les chevrons et le compteur ne s'affiche pas
     return (
         <>
             <div className="carrousel">

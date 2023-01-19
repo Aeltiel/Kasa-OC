@@ -1,4 +1,5 @@
 // fonction pour le nom et la localisation du logement
+//usage de props dans les paramètre de la fonction pour pouvoir mettre à jour le composant en focntion des données
 export default function  Locations ({title, location}){
     return (
         <div>

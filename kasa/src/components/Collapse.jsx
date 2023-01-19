@@ -7,6 +7,8 @@ function Collapse({ quality, description }) {
         setview(!view) // déclenche l'affichage du texte si c'est à true
     }
 
+    //en fonction du type d'information (string ou array) l'affichage est différent
+    //ainsi les éléments d'équipements peuvent s'afficher correctement
     const descriptionActive = () => {
         if (typeof description === 'object') {
             return (

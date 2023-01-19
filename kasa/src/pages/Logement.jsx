@@ -16,7 +16,8 @@ function Logement() {
     let params = useParams();
 
     useEffect(() => {
-        /* setLogement(data.filter(logement => logement.id === params.id)[0]); */
+        //récupération des données liées à la page en comparant les id des BDD et celle récupéréé
+        //dans useParams
         var monLogement = data.filter(logement => logement.id === params.id)[0]
         if (typeof monLogement === "object") {
             setLogement(monLogement)
@@ -28,6 +29,8 @@ function Logement() {
         }
     }, []);
 
+    //affichage du contenu de la page après chargement (quand il y en a un)
+    //si le chemin de la page n'est pas bon retourne error 404
     if (chargement) {
         return <div>Chargement en cours ...</div>
     }
