@@ -10,7 +10,7 @@ function Error() {
                     <span className='Error__Oups--2'>Oups! La page que </span> 
                     vous demandez n'existe pas</p>
             </div>
-            <Link className='ErrorLink' to='/'>Retourner sur la page d'accueil</Link>
+            <Link className='ErrorLink' to='/Kasa-OC/kasa'>Retourner sur la page d'accueil</Link>
         </div>
     )
 }
